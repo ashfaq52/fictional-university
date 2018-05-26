@@ -1,0 +1,33 @@
+[25-May-2018 12:32:14 UTC] PHP Parse error:  syntax error, unexpected '$myname' (T_VARIABLE), expecting ',' or ';' in /app/public/experiment.php on line 2
+[25-May-2018 12:32:45 UTC] PHP Parse error:  syntax error, unexpected '$myname' (T_VARIABLE), expecting ',' or ';' in /app/public/experiment.php on line 2
+[25-May-2018 12:32:47 UTC] PHP Parse error:  syntax error, unexpected '$myname' (T_VARIABLE), expecting ',' or ';' in /app/public/experiment.php on line 2
+[25-May-2018 12:34:25 UTC] PHP Parse error:  syntax error, unexpected '$myname' (T_VARIABLE), expecting ',' or ';' in /app/public/experiment.php on line 2
+[25-May-2018 12:34:26 UTC] PHP Parse error:  syntax error, unexpected '$myname' (T_VARIABLE), expecting ',' or ';' in /app/public/experiment.php on line 2
+[25-May-2018 13:18:51 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /app/public/wp-content/themes/fictional-university-theme/index.php on line 3
+[26-May-2018 02:51:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_onqueue_style() in /app/public/wp-content/themes/fictional-university-theme/functions.php:4
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): university_files('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/script-loader.php(1447): do_action('wp_enqueue_scri...')
+#4 /app/public/wp-includes/class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#7 /app/public/wp-includes/general-template.php(2614): do_action('wp_head')
+#8 /app/public/wp-content/themes/fictional-university-theme/header.php(4): wp_head()
+#9 /app/public/wp-includes/template.php(688): require_once('/app/public/wp-...')
+#10 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', true)
+ in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 4
+[26-May-2018 13:58:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_file_url() in /app/public/wp-content/themes/fictional-university-theme/functions.php:4
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): university_files('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/script-loader.php(1447): do_action('wp_enqueue_scri...')
+#4 /app/public/wp-includes/class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#7 /app/public/wp-includes/general-template.php(2614): do_action('wp_head')
+#8 /app/public/wp-content/themes/fictional-university-theme/header.php(4): wp_head()
+#9 /app/public/wp-includes/template.php(688): require_once('/app/public/wp-...')
+#10 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', true in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 4
