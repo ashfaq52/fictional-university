@@ -31,3 +31,13 @@ Stack trace:
 #8 /app/public/wp-content/themes/fictional-university-theme/header.php(4): wp_head()
 #9 /app/public/wp-includes/template.php(688): require_once('/app/public/wp-...')
 #10 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', true in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 4
+[28-May-2018 00:10:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wp_get_post_parent_id(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/page.php on line 21 and exactly 1 expected in /app/public/wp-includes/post.php:6135
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/page.php(21): wp_get_post_parent_id()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-includes/post.php on line 6135
+[28-May-2018 00:14:02 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/fictional-university-theme/page.php on line 23
+[28-May-2018 00:14:11 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /app/public/wp-content/themes/fictional-university-theme/page.php on line 22

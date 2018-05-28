@@ -2326,8 +2326,8 @@ body.admin-bar .search-overlay {
 .metabox--position-up {
   position: absolute;
   top: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .metabox--with-home-link {
