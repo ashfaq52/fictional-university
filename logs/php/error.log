@@ -41,3 +41,6 @@ Stack trace:
   thrown in /app/public/wp-includes/post.php on line 6135
 [28-May-2018 00:14:02 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/fictional-university-theme/page.php on line 23
 [28-May-2018 00:14:11 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /app/public/wp-content/themes/fictional-university-theme/page.php on line 22
+[28-May-2018 16:19:28 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/page.php on line 41
+[28-May-2018 16:19:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/page.php on line 44
+[28-May-2018 16:19:51 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/page.php on line 44
