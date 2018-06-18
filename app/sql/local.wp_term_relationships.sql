@@ -1,0 +1,13 @@
+/*!40101 SET NAMES binary*/;
+/*!40014 SET FOREIGN_KEY_CHECKS=0*/;
+/*!40103 SET TIME_ZONE='+00:00' */;
+INSERT INTO `wp_term_relationships` VALUES
+(1,1,0),
+(5,5,0),
+(7,1,0),
+(41,2,0),
+(42,2,0),
+(43,4,0),
+(44,4,0),
+(45,3,0),
+(46,3,0);
