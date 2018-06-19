@@ -1,29 +1,5 @@
 <?php get_header(); ?>
 
-<header class="site-header">
-    <div class="container">
-    <h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
-    <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-    <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
-    <div class="site-header__menu group">
-        <nav class="main-navigation">
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Campuses</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-        </nav>
-        <div class="site-header__util">
-        <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
-        <a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
-        <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-        </div>
-    </div>
-    </div>
-</header>
-
 <div class="page-banner">
 <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);"></div>
     <div class="page-banner__content container t-center c-white">
@@ -87,33 +63,10 @@
                     </div>
                 </div>
                 <?php
-            }
+            } wp_reset_postdata(); //way of cleaning up after running a custom query
         ?>
 
-
-        <!-- <div class="event-summary">
-        <a class="event-summary__date event-summary__date--beige t-center" href="#">
-            <span class="event-summary__month">Jan</span>
-            <span class="event-summary__day">20</span>
-        </a>
-        <div class="event-summary__content">
-            <h5 class="event-summary__title headline headline--tiny"><a href="#">We Were Voted Best School</a></h5>
-            <p>For the 100th year in a row we are voted #1. <a href="#" class="nu gray">Read more</a></p>
-        </div>
-        </div>
-
-        <div class="event-summary">
-        <a class="event-summary__date event-summary__date--beige t-center" href="#">
-            <span class="event-summary__month">Feb</span>
-            <span class="event-summary__day">04</span>
-        </a>
-        <div class="event-summary__content">
-            <h5 class="event-summary__title headline headline--tiny"><a href="#">Professors in the National Spotlight</a></h5>
-            <p>Two of our professors have been in national news lately. <a href="#" class="nu gray">Read more</a></p>
-        </div>
-        </div> -->
-
-        <p class="t-center no-margin"><a href="#" class="btn btn--yellow">View All Blog Posts</a></p>
+        <p class="t-center no-margin"><a href="<?php echo site_url('/blog') ?>" class="btn btn--yellow">View All Blog Posts</a></p>
     </div>
     </div>
 </div>
