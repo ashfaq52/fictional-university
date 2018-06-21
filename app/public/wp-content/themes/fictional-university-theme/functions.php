@@ -19,6 +19,9 @@ function university_features(){
 
 
 
+
+
+
 //this changes the title on the tab bar
 add_action('after_setup_theme', 'university_features');
 
