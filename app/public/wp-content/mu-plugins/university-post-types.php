@@ -3,6 +3,7 @@
 function university_post_types() {
     //google "wordpress dashicons" to get list of wordpress admin icons
     register_post_type('event', array(
+        'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array(
             'slug' => 'events',
         ),
