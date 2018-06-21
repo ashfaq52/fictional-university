@@ -19,7 +19,7 @@
             //tell Wordpress what we want to query from the database
             $homepageEvents = new WP_Query(array(
                 //-1 returns all posts that meet conditions
-                'posts_per_page' => -1,
+                'posts_per_page' => 2,
                 'post_type' => 'event',
                 'meta_key' => 'event_date',
                 'orderby' => 'meta_value_num',

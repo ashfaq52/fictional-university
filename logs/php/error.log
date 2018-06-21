@@ -60,3 +60,60 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 68
+[21-Jun-2018 05:07:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_post_type_archieve() in /app/public/wp-content/themes/fictional-university-theme/functions.php:21
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): university_adjust_queries(Object(WP_Query))
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/class-wp-query.php(1634): do_action_ref_array('pre_get_posts', Array)
+#4 /app/public/wp-includes/class-wp-query.php(3230): WP_Query->get_posts()
+#5 /app/public/wp-includes/class-wp.php(599): WP_Query->query(Array)
+#6 /app/public/wp-includes/class-wp.php(715): WP->query_posts()
+#7 /app/public/wp-includes/functions.php(960): WP->main('')
+#8 /app/public/wp-blog-header.php(16): wp()
+#9 /app/public/index.php(17): require('/app/public/wp-...')
+#10 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 21
+[21-Jun-2018 05:07:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_post_type_archieve() in /app/public/wp-content/themes/fictional-university-theme/functions.php:21
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): university_adjust_queries(Object(WP_Query))
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/class-wp-query.php(1634): do_action_ref_array('pre_get_posts', Array)
+#4 /app/public/wp-includes/class-wp-query.php(3230): WP_Query->get_posts()
+#5 /app/public/wp-includes/class-wp.php(599): WP_Query->query(Array)
+#6 /app/public/wp-includes/class-wp.php(715): WP->query_posts()
+#7 /app/public/wp-includes/functions.php(960): WP->main('')
+#8 /app/public/wp-blog-header.php(16): wp()
+#9 /app/public/index.php(17): require('/app/public/wp-...')
+#10 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 21
+[21-Jun-2018 05:07:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_post_type_archieve() in /app/public/wp-content/themes/fictional-university-theme/functions.php:21
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): university_adjust_queries(Object(WP_Query))
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/class-wp-query.php(1634): do_action_ref_array('pre_get_posts', Array)
+#4 /app/public/wp-includes/class-wp-query.php(3230): WP_Query->get_posts()
+#5 /app/public/wp-includes/class-wp.php(599): WP_Query->query(Array)
+#6 /app/public/wp-includes/class-wp.php(715): WP->query_posts()
+#7 /app/public/wp-includes/functions.php(960): WP->main('')
+#8 /app/public/wp-blog-header.php(16): wp()
+#9 /app/public/index.php(17): require('/app/public/wp-...')
+#10 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 21
+[21-Jun-2018 05:07:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_post_type_archieve() in /app/public/wp-content/themes/fictional-university-theme/functions.php:21
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): university_adjust_queries(Object(WP_Query))
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /app/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#3 /app/public/wp-includes/class-wp-query.php(1634): do_action_ref_array('pre_get_posts', Array)
+#4 /app/public/wp-includes/class-wp-query.php(3230): WP_Query->get_posts()
+#5 /app/public/wp-includes/class-wp.php(599): WP_Query->query(Array)
+#6 /app/public/wp-includes/class-wp.php(715): WP->query_posts()
+#7 /app/public/wp-includes/functions.php(960): WP->main('')
+#8 /app/public/wp-blog-header.php(16): wp()
+#9 /app/public/index.php(17): require('/app/public/wp-...')
+#10 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 21
+[21-Jun-2018 06:07:16 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /app/public/wp-content/themes/fictional-university-theme/page-past-events.php on line 22

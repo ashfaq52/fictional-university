@@ -37,6 +37,10 @@ while(have_posts()){
 }
 echo paginate_links();
 ?>
+<hr class="section-break"/>
+<p>Looking for a recap of past events?
+    <a href="<?php echo site_url('/past-events')?>">Check our past events archive</a>
+</p>
 
 
 </div>
