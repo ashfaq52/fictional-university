@@ -19,6 +19,7 @@ function university_features(){
   //the true below is to allow for cropping
   add_image_size('professorLandscape', 400, 260, true);
   add_image_size('professorPortrait', 480, 650, true);
+  add_image_size('pageBanner', 1500, 350, true);
 }
 
 function university_adjust_queries($query){
