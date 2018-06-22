@@ -37,6 +37,24 @@ function university_post_types() {
             'singular_name' => 'Program',
         )
     ));
+
+    //PROFESSOR POST TYPE
+    //tip: Command + D performs the same function and find and replace
+    register_post_type('professor', array(
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'rewrite' => array(
+            'slug' => 'professors',
+        ),
+        'public' => true,
+        'menu_icon' => 'dashicons-welcome-learn-more', //google "wordpress dashicons" to get list of wordpress admin icons
+        'labels' => array(
+            'name' => 'Professors',
+            'add_new_item' => 'Add New Professor',
+            'edit_item' => 'Edit Professor',
+            'all_items' => 'All Professors',
+            'singular_name' => 'Professor',
+        )
+    ));
 }
 
 add_action('init', 'university_post_types');
