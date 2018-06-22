@@ -3,6 +3,24 @@
 function university_post_types() {
 
     //EVENT POST TYPE
+    register_post_type('campus', array(
+        'supports' => array('title', 'editor', 'excerpt'),
+        'rewrite' => array(
+            'slug' => 'campuses',
+        ),
+        'has_archive' => true,
+        'public' => true,
+        'menu_icon' => 'dashicons-location-alt', //google "wordpress dashicons" to get list of wordpress admin icons
+        'labels' => array(
+            'name' => 'Campuses',
+            'add_new_item' => 'Add New Campus',
+            'edit_item' => 'Edit Campus',
+            'all_items' => 'All Campuses',
+            'singular_name' => 'Campus',
+        )
+    ));
+
+    //EVENT POST TYPE
     register_post_type('event', array(
         'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array(
