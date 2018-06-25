@@ -69,45 +69,7 @@ while(have_posts()) {
             <?php }
             echo '</ul>';
         }
-
-        //need to call this method otherwise everything below won't show
-        //you want this everytime you run multiple queries
         wp_reset_postdata();
-
-        $homepageEvents = new WP_Query(array(
-            //-1 returns all posts that meet conditions
-            'posts_per_page' => 2,
-            'post_type' => 'event',
-            'meta_key' => 'event_date',
-            'orderby' => 'meta_value_num',
-            'order' => 'ASC',
-            'meta_query' => array(
-                array(
-                    'key' => 'event_date',
-                    'compare' => '>=',
-                    'value' => $today
-                ),
-                array(
-                    /*
-                    if the array of related programs contains (aka LIKE)
-                    the id # of the current program post, then take it
-                    */
-                    'key' => 'related_programs',
-                    'compare' => 'LIKE',
-                    'value' => '"' . get_the_ID() . '"'
-                )
-            )
-        ));
-        if($homepageEvents->have_posts()){
-            echo '<hr class="section-break" />';
-            echo '<h4 class="headline headline--medium">Upcoming ' . get_the_title() . ' Event(s)</h4><br><br>';
-            $today = date('Ymd');
-            //tell Wordpress what we want to query from the database
-
-            while($homepageEvents->have_posts()) {
-                //below gets the data ready for each post
-                $homepageEvents->the_post();
-                get_template_part('template-parts/content-event');
-            } ?>
+        ?>
 </div>
-    <?php } get_footer(); } ?>
+    <?php get_footer(); } ?>
