@@ -124,3 +124,4 @@ Stack trace:
 [22-Jun-2018 15:56:14 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/fictional-university-theme/single-program.php on line 103
 [22-Jun-2018 15:58:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/fictional-university-theme/single-program.php on line 99
 [22-Jun-2018 16:12:41 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/fictional-university-theme/single-program.php on line 99
+[24-Jun-2018 22:53:32 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /app/public/wp-content/themes/fictional-university-theme/single-campus.php on line 62
