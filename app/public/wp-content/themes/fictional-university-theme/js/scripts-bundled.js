@@ -129,6 +129,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./public/wp-content/themes/fictional-university-theme/js/modules/Search.js":
+/*!**********************************************************************************!*\
+  !*** ./public/wp-content/themes/fictional-university-theme/js/modules/Search.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Search = function Search() {\n  _classCallCheck(this, Search);\n\n  alert(\"hello, I am a search\");\n}; //this allows us to import the code into other script files\n\n\nvar _default = Search;\nexports.default = _default;\n\n//# sourceURL=webpack:///./public/wp-content/themes/fictional-university-theme/js/modules/Search.js?");
+
+/***/ }),
+
 /***/ "./public/wp-content/themes/fictional-university-theme/js/scripts.js":
 /*!***************************************************************************!*\
   !*** ./public/wp-content/themes/fictional-university-theme/js/scripts.js ***!
@@ -137,7 +149,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _jquery = _interopRequireDefault(__webpack_require__(/*! jquery */ \"./public/node_modules/jquery/dist/jquery.js\"));\n\nvar _slickCarousel = _interopRequireDefault(__webpack_require__(/*! slick-carousel */ \"./public/node_modules/slick-carousel/slick/slick.js\"));\n\nvar _MobileMenu = _interopRequireDefault(__webpack_require__(/*! ./modules/MobileMenu */ \"./public/wp-content/themes/fictional-university-theme/js/modules/MobileMenu.js\"));\n\nvar _HeroSlider = _interopRequireDefault(__webpack_require__(/*! ./modules/HeroSlider */ \"./public/wp-content/themes/fictional-university-theme/js/modules/HeroSlider.js\"));\n\nvar _GoogleMap = _interopRequireDefault(__webpack_require__(/*! ./modules/GoogleMap */ \"./public/wp-content/themes/fictional-university-theme/js/modules/GoogleMap.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// 3rd party packages from NPM\n// Our modules / classes\n// Instantiate a new object using our modules/classes\nvar mobileMenu = new _MobileMenu.default();\nvar heroSlider = new _HeroSlider.default();\nvar googleMap = new _GoogleMap.default();\n\n//# sourceURL=webpack:///./public/wp-content/themes/fictional-university-theme/js/scripts.js?");
+eval("\n\nvar _jquery = _interopRequireDefault(__webpack_require__(/*! jquery */ \"./public/node_modules/jquery/dist/jquery.js\"));\n\nvar _slickCarousel = _interopRequireDefault(__webpack_require__(/*! slick-carousel */ \"./public/node_modules/slick-carousel/slick/slick.js\"));\n\nvar _MobileMenu = _interopRequireDefault(__webpack_require__(/*! ./modules/MobileMenu */ \"./public/wp-content/themes/fictional-university-theme/js/modules/MobileMenu.js\"));\n\nvar _HeroSlider = _interopRequireDefault(__webpack_require__(/*! ./modules/HeroSlider */ \"./public/wp-content/themes/fictional-university-theme/js/modules/HeroSlider.js\"));\n\nvar _GoogleMap = _interopRequireDefault(__webpack_require__(/*! ./modules/GoogleMap */ \"./public/wp-content/themes/fictional-university-theme/js/modules/GoogleMap.js\"));\n\nvar _Search = _interopRequireDefault(__webpack_require__(/*! ./modules/Search */ \"./public/wp-content/themes/fictional-university-theme/js/modules/Search.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// 3rd party packages from NPM\n// Our modules / classes\n// Instantiate a new object using our modules/classes\nvar mobileMenu = new _MobileMenu.default();\nvar heroSlider = new _HeroSlider.default();\nvar googleMap = new _GoogleMap.default();\nvar search = new _Search.default();\nvar magicalSearch = new _Search.default();\n\n//# sourceURL=webpack:///./public/wp-content/themes/fictional-university-theme/js/scripts.js?");
 
 /***/ })
 
