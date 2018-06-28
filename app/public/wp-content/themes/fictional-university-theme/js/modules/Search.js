@@ -47,7 +47,9 @@ class Search {
     }
 
     getResults(){
-        this.resultsDiv.html("imagine real search results here");
+        $.getJSON('http://fictional-university.local/wp-json/wp/v2/posts?search=' + this.searchField.val(),(posts) => {
+            console.log(posts[0].title.rendered)
+        })
         this.isSpinnerVisible = false;
     }
 
