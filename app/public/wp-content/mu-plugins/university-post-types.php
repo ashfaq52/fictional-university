@@ -59,6 +59,7 @@ function university_post_types() {
     //PROFESSOR POST TYPE
     //tip: Command + D performs the same function and find and replace
     register_post_type('professor', array(
+        'show_in_rest' => true,
         'supports' => array('title', 'editor', 'thumbnail'),
         'rewrite' => array(
             'slug' => 'professors',
