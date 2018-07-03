@@ -1,5 +1,7 @@
 <?php
 
+
+
 require get_theme_file_path('/inc/search-route.php');
 
 function university_custom_rest(){
@@ -124,5 +126,26 @@ function noSubsAdminBar(){
   if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber') {
     show_admin_bar(false);
   }
+}
+
+//Customize Login Screen
+add_filter('login_headerurl', 'ourHeaderUrl');
+
+function ourHeaderUrl() {
+  return  esc_url(site_url('/'));
+}
+
+add_action('login_enqueue_scripts', 'ourLoginCSS');
+
+function ourLoginCSS() {
+  wp_enqueue_style('custom_google_fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+  wp_enqueue_style('university_main_styles', get_stylesheet_uri());
+
+}
+
+add_filter('login_headertitle', 'ourLoginTitle');
+
+function ourLoginTitle() {
+  return get_bloginfo('name');
 }
 

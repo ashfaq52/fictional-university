@@ -27,4 +27,5 @@ body.login {
   width: auto;
   height: auto;
   text-indent: 0;
+  display: none;
 }
