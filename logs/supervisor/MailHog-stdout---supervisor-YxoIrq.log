@@ -4302,3 +4302,230 @@ Creating API v2 with WebPath:
 [APIv1] KEEPALIVE /api/v1/events
 [APIv1] KEEPALIVE /api/v1/events
 [APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "2vJ4n8ioZMtotWVcimhtx_ltecoWFVvo4UivQrPu8SE=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "fbf6468358bd",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Tue, 3 Jul 2018 08:46:38 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@fictional-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003cb0a9d656f7deb5b2e90fdd816ccb3673@fictional-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id 2vJ4n8ioZMtotWVcimhtx_ltecoWFVvo4UivQrPu8SE=@mailhog.example; Tue, 03 Jul 2018 08:46:38 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@fbf6468358bd\u003e"
+      ],
+      "Subject": [
+        "[Fictional University] New User Registration"
+      ],
+      "To": [
+        "julia.gao.miller@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "New user registration on your site Fictional University:\r\n\r\nUsername: meetyingying\r\n\r\nEmail: yingying@test.com\r\n",
+    "Size": 551,
+    "MIME": null
+  },
+  "Created": "2018-07-03T08:46:38.934551598Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@fbf6468358bd",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: julia.gao.miller@gmail.com\r\nSubject: [Fictional University] New User Registration\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Tue, 3 Jul 2018 08:46:38 +0000\r\nFrom: WordPress \u003cwordpress@fictional-university.local\u003e\r\nMessage-ID: \u003cb0a9d656f7deb5b2e90fdd816ccb3673@fictional-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nNew user registration on your site Fictional University:\r\n\r\nUsername: meetyingying\r\n\r\nEmail: yingying@test.com\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "BLaqobftl8qgFWjXUvY9pd0EWzCCqc5XHfpyiH-poi8=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "fbf6468358bd",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Tue, 3 Jul 2018 08:46:38 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@fictional-university.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003ce3644f2d7d93f5ebab369d7729e80747@fictional-university.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id BLaqobftl8qgFWjXUvY9pd0EWzCCqc5XHfpyiH-poi8=@mailhog.example; Tue, 03 Jul 2018 08:46:38 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@fbf6468358bd\u003e"
+      ],
+      "Subject": [
+        "[Fictional University] Your username and password info"
+      ],
+      "To": [
+        "yingying@test.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "Username: meetyingying\r\n\r\nTo set your password, visit the following address:\r\n\r\n\u003chttp://fictional-university.local/wp-login.php?action=rp\u0026key=NaO2h9gr7QU9AzLkvWTz\u0026login=meetyingying\u003e\r\n\r\nhttp://fictional-university.local/wp-login.php\r\n",
+    "Size": 674,
+    "MIME": null
+  },
+  "Created": "2018-07-03T08:46:38.94797904Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@fbf6468358bd",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: yingying@test.com\r\nSubject: [Fictional University] Your username and password info\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Tue, 3 Jul 2018 08:46:38 +0000\r\nFrom: WordPress \u003cwordpress@fictional-university.local\u003e\r\nMessage-ID: \u003ce3644f2d7d93f5ebab369d7729e80747@fictional-university.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nUsername: meetyingying\r\n\r\nTo set your password, visit the following address:\r\n\r\n\u003chttp://fictional-university.local/wp-login.php?action=rp\u0026key=NaO2h9gr7QU9AzLkvWTz\u0026login=meetyingying\u003e\r\n\r\nhttp://fictional-university.local/wp-login.php\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events

@@ -4,6 +4,8 @@ function university_post_types() {
 
     //EVENT POST TYPE
     register_post_type('campus', array(
+        'capability_type' => 'campus',
+        'map_meta_cap' => true,
         'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array(
             'slug' => 'campuses',
@@ -22,6 +24,9 @@ function university_post_types() {
 
     //EVENT POST TYPE
     register_post_type('event', array(
+        'capability_type' => 'event',
+        'map_meta_cap' => true,
+        // two above properties are used for user role management in Lecture 72
         'supports' => array('title', 'editor', 'excerpt'),
         'rewrite' => array(
             'slug' => 'events',
