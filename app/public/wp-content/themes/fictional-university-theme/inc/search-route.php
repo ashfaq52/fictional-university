@@ -42,6 +42,17 @@ function universitySearchResults($data){
             ));
         }
         if (get_post_type() == 'program'){
+            $relatedCampuses = get_field('related_campus');
+
+            if ($relatedCampuses){
+                foreach($relatedCampuses as $campus) {
+                    array_push($results['campuses'], array(
+                        'title' => get_the_title($campus),
+                        'permalink' => get_the_permalink($campus),
+                    ));
+                }
+            }
+
             array_push($results['programs'], array(
                 'id' => get_the_id(),
                 'title' => get_the_title(),
@@ -87,7 +98,7 @@ function universitySearchResults($data){
         }
 
         $programRelationshipQuery = new WP_Query(array(
-                'post-type' => 'professor',
+                'post-type' => array('professor', 'event'),
                 'meta-query' => $programsMetaQuery,
         ));
 
@@ -95,6 +106,25 @@ function universitySearchResults($data){
 
             $programRelationshipQuery->the_post();
 
+            if (get_post_type() == 'event'){
+                $eventDate = new DateTime(get_field('event_date'));
+                $description = null;
+                if(has_excerpt()){
+                    $description = get_the_excerpt();
+                } else {
+                    $description = wp_trim_words(get_the_content(), 18);
+                }
+                //BUG: right now nothing seems to be pushing to the 'events' array
+                array_push($results['events'], array(
+                    'title' => get_the_title(),
+                    'permalink' => get_the_permalink(),
+                    'month' => $eventDate->format('M'),
+                    'day' => $eventDate->format('d'),
+                    'description' => $description,
+                ));
+            }
+
+            //BUG: right now nothing seems to be pushing to the 'professor' array
             if (get_post_type() == 'professor'){
                 array_push($results['professors'], array(
                     'title' => get_the_title(),
@@ -102,17 +132,15 @@ function universitySearchResults($data){
                     'image' => get_the_post_thumbnail_url(0, 'professorLandscape'),
                 ));
             }
+
         }
 
+        //remove potential duplicates because we now have two queries
         $results['professors'] = array_values(array_unique($results['professors'], SORT_REGULAR));
+        $results['events'] = array_values(array_unique($results['events'], SORT_REGULAR));
 
     }
 
-
-    // $results['professors'] = array()
-    // console.log('testing');
-
-    //will return an array of objects
     return $results;
 
 }
