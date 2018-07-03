@@ -20,7 +20,7 @@ while(have_posts()) {
     </div>
 
     <div class="generic-content">
-    <?php the_content(); ?>
+    <?php the_field('main_body_content'); ?>
     <?php
         $relatedProfessors = new WP_Query(array(
             //-1 returns all posts that meet conditions

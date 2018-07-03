@@ -11,7 +11,7 @@ function universityRegisterSearch(){
 
 function universitySearchResults($data){
     $mainQuery = new WP_Query(array(
-        'post_type' => array('post', 'page','professor', 'campus', 'event'),
+        'post_type' => array('post', 'page','professor', 'campus', 'event', 'program'),
         //sanitize_text_field is for security reasons
         's' => sanitize_text_field($data['term']),
     ));
@@ -43,6 +43,7 @@ function universitySearchResults($data){
         }
         if (get_post_type() == 'program'){
             array_push($results['programs'], array(
+                'id' => get_the_id(),
                 'title' => get_the_title(),
                 'permalink' => get_the_permalink(),
             ));
@@ -72,6 +73,44 @@ function universitySearchResults($data){
         }
 
     }
+
+    if($results['programs']) {
+
+        $programsMetaQuery = array('relation' => 'OR');
+
+        foreach($results['programs'] as $item){
+            array_push($programsMetaQuery, array(
+                'key' => 'related_programs',
+                'compare' => 'LIKE',
+                'value' => '"' . $item['id'] . '"',
+            ));
+        }
+
+        $programRelationshipQuery = new WP_Query(array(
+                'post-type' => 'professor',
+                'meta-query' => $programsMetaQuery,
+        ));
+
+        while($programRelationshipQuery->have_posts()) {
+
+            $programRelationshipQuery->the_post();
+
+            if (get_post_type() == 'professor'){
+                array_push($results['professors'], array(
+                    'title' => get_the_title(),
+                    'permalink' => get_the_permalink(),
+                    'image' => get_the_post_thumbnail_url(0, 'professorLandscape'),
+                ));
+            }
+        }
+
+        $results['professors'] = array_values(array_unique($results['professors'], SORT_REGULAR));
+
+    }
+
+
+    // $results['professors'] = array()
+    // console.log('testing');
 
     //will return an array of objects
     return $results;

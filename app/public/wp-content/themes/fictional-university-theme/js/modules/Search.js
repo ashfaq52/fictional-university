@@ -30,7 +30,7 @@ class Search {
     typingLogic(){
         if(this.searchField.val() != this.previousValue) {
             clearTimeout(this.typingTimer);
-            console.log("search field val: ", this.searchField.val())
+            // console.log("search field val: ", this.searchField.val())
             if (this.searchField.val()){
                 if (!this.isSpinnerVisible){
                     this.resultsDiv.html('<div class="spinner-loader"></div>')
@@ -38,7 +38,7 @@ class Search {
                 }
                 this.typingTimer = setTimeout(this.getResults.bind(this), 500);
             } else {
-                console.log('emptying results')
+                // console.log('emptying results')
                 this.resultsDiv.html("");
                 this.isSpinnerVisible = false;
             }
@@ -49,8 +49,8 @@ class Search {
 
     getResults(){
         $.getJSON(universityData.root_url + '/wp-json/university/v1/search?term=' + this.searchField.val(), (results) => {
-            console.log('HERE ARE THE RESULTS: ' + results)
-            for (var i in results) console.log(i + " - " + results[i]);
+            //console.log('HERE ARE THE RESULTS: ' + results)
+            // for (var i in results) console.log(i + " - " + results[i]);
 
             this.resultsDiv.html(`
                 <div class="row">
