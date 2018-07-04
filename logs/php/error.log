@@ -201,3 +201,10 @@ Stack trace:
 [03-Jul-2018 03:37:19 UTC] PHP Recoverable fatal error:  Object of class WP_Query could not be converted to string in /app/public/wp-content/themes/fictional-university-theme/inc/search-route.php on line 93
 [03-Jul-2018 06:19:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/fictional-university-theme/search.php on line 18
 [03-Jul-2018 09:50:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 117
+[04-Jul-2018 09:43:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attri() in /app/public/wp-content/themes/fictional-university-theme/page-my-notes.php:39
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/page-my-notes.php on line 39

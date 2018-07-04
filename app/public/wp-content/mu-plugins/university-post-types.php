@@ -79,6 +79,24 @@ function university_post_types() {
             'singular_name' => 'Professor',
         )
     ));
+
+    //NOTE POST TYPE
+    register_post_type('note', array(
+        //so that we can work with the custom post type from the REST API.
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor'),
+        'public' => false,
+        //show in the Admin dashboard
+        'show_ui' => true,
+        'menu_icon' => 'dashicons-welcome-write-blog', //google "wordpress dashicons" to get list of wordpress admin icons
+        'labels' => array(
+            'name' => 'Notes',
+            'add_new_item' => 'Add New Note',
+            'edit_item' => 'Edit Note',
+            'all_items' => 'All Notes',
+            'singular_name' => 'Note',
+        )
+    ));
 }
 
 add_action('init', 'university_post_types');
