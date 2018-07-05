@@ -51,7 +51,7 @@ function university_files() {
   wp_localize_script('main-university-js', 'universityData', array(
     'root_url' => get_site_url(),
     //below allows individuals to submit delete requests via the web. This is kind of like the authorization key.
-    'nonce' => wp_create_nonce('wp-rest')
+    'nonce' => wp_create_nonce('wp_rest')
 
   ));
 
