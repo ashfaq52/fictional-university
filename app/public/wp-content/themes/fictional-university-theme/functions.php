@@ -10,6 +10,11 @@ function university_custom_rest(){
       return get_the_author();
     }
   ));
+  register_rest_field('note', 'userNoteCount', array(
+    'get_callback' => function(){
+      return count_user_posts(get_current_user_id(), 'note');
+    }
+  ));
 }
 
 add_action('rest_api_init', 'university_custom_rest');
@@ -154,12 +159,20 @@ function ourLoginTitle() {
 /*
 right before the data gets put into the database, we want to filter/modify it
 'wp_insert_post_data' is one of the most powerful and flexible filter hooks in all of WP
+The 2 in the method below tells WP that are are allowing method to use TWO parameters.
+10 represents the priority number.
 */
-add_filter('wp_insert_post_data', 'makeNotePrivate');
+add_filter('wp_insert_post_data', 'makeNotePrivate', 10, 2);
 
-function makeNotePrivate($data){
+function makeNotePrivate($data, $postarr){
   //use this if statement to prevent malicious code
   if ($data['post_type']=='note') {
+    //if current user already has more than 4 note posts. !$postarr['ID'] is to check whether the post is new or an edit
+    if (count_user_posts(get_current_user_id(),'note') > 4 AND !$postarr['ID']) {
+      //die() is simliar to return/break.
+      die("You have reached your note limit");
+    }
+
     $data['post_content'] = sanitize_textarea_field($data['post_content']);
     $data['post_title'] = sanitize_text_field($data['post_title']);
   }

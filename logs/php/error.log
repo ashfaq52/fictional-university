@@ -217,3 +217,4 @@ Stack trace:
 #4 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
 #5 {main}
   thrown in /app/public/wp-includes/plugin.php on line 106
+[05-Jul-2018 13:38:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 164
