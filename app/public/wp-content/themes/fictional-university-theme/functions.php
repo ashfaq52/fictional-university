@@ -151,3 +151,21 @@ function ourLoginTitle() {
   return get_bloginfo('name');
 }
 
+/*
+right before the data gets put into the database, we want to filter/modify it
+'wp_insert_post_data' is one of the most powerful and flexible filter hooks in all of WP
+*/
+add_filter('wp_insert_post_data', 'makeNotePrivate');
+
+function makeNotePrivate($data){
+  //use this if statement to prevent malicious code
+  if ($data['post_type']=='note') {
+    $data['post_content'] = sanitize_textarea_field($data['post_content']);
+    $data['post_title'] = sanitize_text_field($data['post_title']);
+  }
+  if ($data['post_type'] == 'note' AND $data['post_status'] != 'trash') {
+    $data['post_status'] = "private";
+
+  }
+  return $data;
+}

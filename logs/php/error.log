@@ -208,3 +208,12 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/fictional-university-theme/page-my-notes.php on line 39
+[05-Jul-2018 11:00:35 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_filter(), 1 passed in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 156 and at least 2 expected in /app/public/wp-includes/plugin.php:106
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/functions.php(156): add_filter('wp_insert_post_...')
+#1 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#2 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#3 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#4 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#5 {main}
+  thrown in /app/public/wp-includes/plugin.php on line 106

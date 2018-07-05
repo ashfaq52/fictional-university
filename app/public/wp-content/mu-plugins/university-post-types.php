@@ -82,6 +82,9 @@ function university_post_types() {
 
     //NOTE POST TYPE
     register_post_type('note', array(
+        //this gives non-admin users the ability to create notes
+        'capability_type' => 'note',
+        'map_meta_cap' => true,
         //so that we can work with the custom post type from the REST API.
         'show_in_rest' => true,
         'supports' => array('title', 'editor'),
