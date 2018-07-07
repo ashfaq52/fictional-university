@@ -218,3 +218,22 @@ Stack trace:
 #5 {main}
   thrown in /app/public/wp-includes/plugin.php on line 106
 [05-Jul-2018 13:38:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/functions.php on line 164
+[06-Jul-2018 04:27:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function if_user_logged_in() in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php:19
+Stack trace:
+#0 /app/public/wp-includes/rest-api/class-wp-rest-server.php(936): createLike(Object(WP_REST_Request))
+#1 /app/public/wp-includes/rest-api/class-wp-rest-server.php(321): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 /app/public/wp-includes/rest-api.php(266): WP_REST_Server->serve_request('/university/v1/...')
+#3 /app/public/wp-includes/class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 /app/public/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#6 /app/public/wp-includes/class-wp.php(373): do_action_ref_array('parse_request', Array)
+#7 /app/public/wp-includes/class-wp.php(713): WP->parse_request('')
+#8 /app/public/wp-includes/functions.php(960): WP->main('')
+#9 /app/public/wp-blog-header.php(16): wp()
+#10 /app/public/index.php(17): require('/app/public/ in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 19
+[06-Jul-2018 04:37:55 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 35
+[07-Jul-2018 10:40:01 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 65
+[07-Jul-2018 10:43:56 UTC] PHP Parse error:  syntax error, unexpected '$likeId' (T_VARIABLE) in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 63
+[07-Jul-2018 10:44:20 UTC] PHP Parse error:  syntax error, unexpected '$likeId' (T_VARIABLE) in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 63
+[07-Jul-2018 10:45:13 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 62
+[07-Jul-2018 10:45:15 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /app/public/wp-content/themes/fictional-university-theme/inc/like-route.php on line 62
